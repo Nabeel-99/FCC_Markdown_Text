@@ -61,8 +61,8 @@ const Editor = () => {
                 <textarea id="editor" className="text-white bg-blue-950 w-full h-screen overflow-auto p-3" 
                 value={markdownText} onChange={(e) => setMarkdownText(e.target.value)}></textarea>
             </div>
-            <div className="text-white bg-blue-950 mt-10 h-screen rounded-sm overflow-auto md:w-2/4 md:mt-0">
-                <h1 className="text-xl text-center  bg-blue-900">Previewer</h1>
+            <div className="text-black bg-white mt-10 h-screen rounded-sm overflow-auto md:w-2/4 md:mt-0">
+                <h1 className="text-xl text-white text-center  bg-blue-900">Previewer</h1>
                 <div id="preview" className="text-justify p-10 whitespace-pre-line h-screen">
                     <ReactMarkdown>{markdownText}</ReactMarkdown>
                 </div>
