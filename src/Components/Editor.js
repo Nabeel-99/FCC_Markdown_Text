@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown"
 const Editor = () => {
 
   const editorMarkdown = `
-  <!-- 
+  <!-- Wsd  sdass jdabsjkbdas
   # Welcome to my React Markdown Previe
   ## GitHub
   ### And here's some other cool stuff:
@@ -56,14 +56,14 @@ const Editor = () => {
     <div className="container p-10 mx-auto">
         <h2 class="text-4xl font-semibold mb-3">Markdown Editor</h2>
         <div className="flex flex-col justify-between md:flex-row">
-            <div className="text-white bg-blue-950  h-screen rounded-sm md:w-2/5">
-                <h1 className="text-xl text-center w-100 bg-blue-900">Editor</h1>
+            <div className="text-white bg-blue-950 rounded-sm md:w-2/5">
+                <h1 className="text-xl text-center  bg-blue-900">Editor</h1>
                 <textarea id="editor" className="text-white bg-blue-950 w-full h-screen overflow-auto p-3" 
                 value={markdownText} onChange={(e) => setMarkdownText(e.target.value)}></textarea>
             </div>
-            <div className="text-white bg-blue-950 mt-10  h-screen rounded-sm md:w-2/4 md:mt-0">
-                <h1 className="text-xl text-center w-100 bg-blue-900">Previewer</h1>
-                <div id="preview" className="text-justify p-3 h-screen overflow-auto">
+            <div className="text-white bg-blue-950 mt-10 h-screen rounded-sm overflow-auto md:w-2/4 md:mt-0">
+                <h1 className="text-xl text-center  bg-blue-900">Previewer</h1>
+                <div id="preview" className="text-justify p-10 whitespace-pre-line h-screen">
                     <ReactMarkdown>{markdownText}</ReactMarkdown>
                 </div>
             </div>
